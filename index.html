@@ -1,1 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовый учет для премиального трикотажного производства</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm: {
+                            50: '#fcfbfa',
+                            100: '#f5f2ee',
+                            200: '#e8e2d8',
+                            300: '#d7ccbc',
+                            400: '#bcab96',
+                            500: '#9e8c75',
+                            600: '#84725c',
+                            700: '#6c5c4a',
+                            800: '#584c3e',
+                            900: '#483f34',
+                        },
+                        graphite: {
+                            800: '#232529',
+                            900: '#181a1d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfbfa;
+            color: #483f34;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(215, 204, 188, 0.4);
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(108, 92, 74, 0.08);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-warm-200 selection:text-warm-900">
 
+    <section class="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-gradient-to-b from-warm-100/60 to-warm-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center space-x-2 bg-warm-200/70 text-warm-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-gem text-warm-600"></i>
+                    <span>персональное предложение по итогам консультации</span>
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-graphite-900 tracking-tight leading-tight mb-6">
+                    как собственнику бизнеса увеличить рентабельность до 40% и обеспечить стабильный рост премиального производства
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-warm-700 leading-relaxed mb-10">
+                    уважаемый партнер! создание эксклюзивных шерстяных пледов и одеял требует высочайшего мастерства, тонкого вкуса и внимания к деталям. когда бизнес масштабируется, для выхода на новый уровень доходности и безупречного выполнения долговых обязательств необходим надежный финансовый фундамент.
+                </p>
+
+                <div class="bg-white/80 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-warm-200/60 custom-shadow mb-8">
+                    <h3 class="text-lg font-bold text-graphite-900 mb-4 flex items-center space-x-2">
+                        <i class="fa-solid fa-compass text-warm-700"></i>
+                        <span>ключевые пути увеличения рентабельности и укрепления бизнеса:</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                        <div class="bg-warm-50 p-4 rounded-xl border border-warm-200/40">
+                            <div class="w-8 h-8 rounded-lg bg-warm-800 text-white flex items-center justify-center font-bold mb-3">1</div>
+                            <h4 class="font-semibold text-graphite-900 mb-1">контроль себестоимости</h4>
+                            <p class="text-warm-700 text-xs leading-relaxed">точный учет каждой партии мериносовой пряжи и сопутствующих издержек без скрытых утечек маржи.</p>
+                        </div>
+                        <div class="bg-warm-50 p-4 rounded-xl border border-warm-200/40">
+                            <div class="w-8 h-8 rounded-lg bg-warm-800 text-white flex items-center justify-center font-bold mb-3">2</div>
+                            <h4 class="font-semibold text-graphite-900 mb-1">управление ликвидностью</h4>
+                            <p class="text-warm-700 text-xs leading-relaxed">синхронизация денежных поступлений от клиентов с графиком долговых выплат и закупками.</p>
+                        </div>
+                        <div class="bg-warm-50 p-4 rounded-xl border border-warm-200/40">
+                            <div class="w-8 h-8 rounded-lg bg-warm-800 text-white flex items-center justify-center font-bold mb-3">3</div>
+                            <h4 class="font-semibold text-graphite-900 mb-1">прозрачность бюджетов</h4>
+                            <p class="text-warm-700 text-xs leading-relaxed">оценка окупаемости каждого проекта и выставки, разделение личных расходов и корпоративных счетов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-sm text-warm-600 font-medium">
+                    <i class="fa-solid fa-arrow-down animate-bounce mr-2"></i> подробно разберем специфику задач и пути решения ниже
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-warm-50 to-transparent pointer-events-none"></div>
+    </section>
+
+    <section id="pains" class="py-20 bg-warm-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-warm-600 font-semibold mb-2 block">специфика премиального сегмента</span>
+                <h2 class="text-3xl font-bold text-graphite-900 mb-4">особенности учета в малом шерстяном производстве</h2>
+                <p class="text-warm-700">производство эксклюзивного текстиля ручной и полупромышленной работы связано с высокими затратами на сырье и циклом создания. без тонкой финансовой настройки здесь часто возникают скрытые барьеры роста.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl custom-shadow border border-warm-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-warm-100 rounded-xl flex items-center justify-center text-warm-800 text-xl mb-6">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-graphite-900 mb-3">оплата сырья через личные карты</h3>
+                        <p class="text-warm-700 text-sm leading-relaxed">
+                            закупка элитной мериносовой пряжи и фурнитуры с личных счетов основателей стирает границу между семейными расходами и бизнесом, из-за чего реальная себестоимость изделий размывается.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-warm-100 text-xs text-warm-600 font-medium">
+                        влияние: искажение маржинальности и отсутствие прозрачного контроля над затратами
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl custom-shadow border border-warm-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-warm-100 rounded-xl flex items-center justify-center text-warm-800 text-xl mb-6">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-graphite-900 mb-3">инвестиции в выставки и логистику</h3>
+                        <p class="text-warm-700 text-sm leading-relaxed">
+                            участие в профильных премиальных выставках требует крупных единовременных вложений. без предварительного планирования такие расходы создают временное напряжение в бюджете.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-warm-100 text-xs text-warm-600 font-medium">
+                        влияние: риск кассовых разрывов в период подготовки к ключевым продажам
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl custom-shadow border border-warm-200/60 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-12 h-12 bg-warm-100 rounded-xl flex items-center justify-center text-warm-800 text-xl mb-6">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-graphite-900 mb-3">длинный цикл и заморозка капитала</h3>
+                        <p class="text-warm-700 text-sm leading-relaxed">
+                            дорогая шерсть формирует значительный запас сырья и готовых пледов на складе. при задержках поступлений выручки становится сложнее своевременно проводить обязательные платежи по кредитам.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-warm-100 text-xs text-warm-600 font-medium">
+                        влияние: необходимость жесткого синхронизирования притока средств с графиком долгов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="changes" class="py-20 bg-warm-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-warm-600 font-semibold mb-2 block">стратегия развития</span>
+                <h2 class="text-3xl font-bold text-graphite-900 mb-4">варианты решений и ожидаемые результаты</h2>
+                <p class="text-warm-700">внедрение инструментов управленческого учета специально под производственные бизнес-процессы.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-graphite-900 mb-6">что изменится в управлении предприятием</h3>
+                    <p class="text-warm-700 mb-8 leading-relaxed">
+                        мы выстроим прозрачную финансовую архитектуру, которая позволит объективно оценивать прибыльность каждого пледа или одеяла и гарантированно выполнять обязательства.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-warm-800 text-warm-50 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-graphite-900 mb-1">расчет истинной себестоимости</h4>
+                                <p class="text-sm text-warm-700">учет всех составляющих: от стоимости пряжи и усадки до брендированной упаковки и логистических издержек.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-warm-800 text-warm-50 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-graphite-900 mb-1">платежный календарь</h4>
+                                <p class="text-sm text-warm-700">синхронизация поступлений от покупателей с графиком выплат по кредитам и закупкам сырья для полной предсказуемости.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-full bg-warm-800 text-warm-50 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-graphite-900 mb-1">регламентация расходов</h4>
+                                <p class="text-sm text-warm-700">четкое разделение личных средств собственников и корпоративных счетов с установкой фиксированного бюджета.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 sm:p-10 rounded-3xl custom-shadow border border-warm-200/60 relative">
+                    <div class="absolute -top-4 -right-4 bg-warm-800 text-warm-100 px-4 py-2 rounded-2xl text-xs font-semibold shadow">
+                        эффект через 30 дней
+                    </div>
+                    <h3 class="text-xl font-semibold text-graphite-900 mb-6">целевые показатели эффективности</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-warm-700">прозрачность ценообразования и маржи</span>
+                                <span class="text-graphite-900 font-bold">до: 30% / после: 95%</span>
+                            </div>
+                            <div class="w-full bg-warm-100 h-3 rounded-full overflow-hidden">
+                                <div class="bg-warm-800 h-full rounded-full transition-all duration-1000" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-warm-700">прогнозируемость кассовых разрывов</span>
+                                <span class="text-graphite-900 font-bold">до: 0% / после: 100%</span>
+                            </div>
+                            <div class="w-full bg-warm-100 h-3 rounded-full overflow-hidden">
+                                <div class="bg-warm-800 h-full rounded-full transition-all duration-1000" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-2">
+                                <span class="text-warm-700">обслуживание долгов по графику</span>
+                                <span class="text-graphite-900 font-bold">до: риски / после: стабильно</span>
+                            </div>
+                            <div class="w-full bg-warm-100 h-3 rounded-full overflow-hidden">
+                                <div class="bg-warm-800 h-full rounded-full transition-all duration-1000" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-warm-100 flex items-center justify-between text-xs text-warm-600">
+                        <span>экспертная методология для премиального сегмента</span>
+                        <i class="fa-solid fa-shield-halved text-warm-800 text-base"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-warm-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-warm-900 text-warm-100 rounded-3xl p-8 sm:p-12 custom-shadow relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-warm-800/30 text-9xl pointer-events-none">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="inline-block bg-warm-800 text-warm-200 px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-4">
+                        инвестиции в финансового директора
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-white">почему работа с экспертом окупается в первые месяцы?</h2>
+                    <p class="text-warm-300 text-sm sm:text-base leading-relaxed mb-6">
+                        привлечение финансового директора — это не статья расходов, а инструмент генерации дополнительной чистой прибыли. Наведение порядка в закупках дорогой мериносовой шерсти, аудит бюджетов на выставки и жесткий контроль маржинальности позволяют высвободить от 10% до 25% оборотных средств, которые ранее терялись в операционном хаосе.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-warm-800">
+                        <div>
+                            <span class="block text-2xl font-bold text-white mb-1">в 3–5 раз</span>
+                            <span class="text-xs text-warm-400">окупаемость затрат за счет найденных внутренних резервов</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white mb-1">0 руб.</span>
+                            <span class="text-xs text-warm-400">штрафов и просрочек по кредитным и долговым обязательствам</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white mb-1">100%</span>
+                            <span class="text-xs text-warm-400">прозрачность ценообразования каждого изделия</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tariffs" class="py-20 bg-warm-100/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-warm-600 font-semibold mb-2 block">выбор решения</span>
+                <h2 class="text-3xl font-bold text-graphite-900 mb-4">тарифы сотрудничества</h2>
+                <p class="text-warm-700">выберите формат работы под текущие задачи вашего трикотажного производства.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Tariff 1 -->
+                <div class="bg-white rounded-3xl custom-shadow border border-warm-200/60 p-8 flex flex-col justify-between transition hover:-translate-y-1">
+                    <div>
+                        <div class="inline-block bg-warm-100 text-warm-800 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                            старт
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite-900 mb-2">аудит деятельности</h3>
+                        <p class="text-warm-700 text-sm mb-6">для быстрой диагностики текущей ситуации, выявления скрытых потерь и анализа расходов через карты.</p>
+                        
+                        <div class="text-3xl font-extrabold text-graphite-900 mb-6">
+                            от 65 000 ₽
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-warm-800 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>экспресс-анализ расходов с карт физлиц</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>расчет себестоимости пледов и одеял</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>выявление причин кассовых разрывов</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-warm-400">
+                                <i class="fa-solid fa-xmark text-warm-400"></i>
+                                <span class="line-through">внедрение управленческого баланса</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full bg-warm-100 text-warm-800 font-semibold py-3.5 rounded-xl text-center text-sm">
+                        вариант 1
+                    </div>
+                </div>
+
+                <!-- Tariff 2 (Popular) -->
+                <div class="bg-white rounded-3xl custom-shadow border-2 border-warm-800 p-8 flex flex-col justify-between relative transition hover:-translate-y-1">
+                    <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-warm-800 text-warm-50 px-4 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                        рекомендуем
+                    </div>
+                    <div>
+                        <div class="inline-block bg-warm-100 text-warm-800 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                            система под ключ
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite-900 mb-2">расширенный</h3>
+                        <p class="text-warm-700 text-sm mb-6">полная настройка управленческого учета, P&L, отчета о движении денежных средств и регламентов.</p>
+                        
+                        <div class="text-3xl font-extrabold text-graphite-900 mb-6">
+                            от 140 000 ₽
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-warm-800 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>все этапы аудита деятельности</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>настройка P&L, баланса и отчета по ДС</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>регламент разделения личных и бизнес-карт</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>настройка платежного календаря</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full bg-warm-800 text-warm-50 font-semibold py-3.5 rounded-xl text-center text-sm shadow-md">
+                        основной выбор
+                    </div>
+                </div>
+
+                <!-- Tariff 3 -->
+                <div class="bg-white rounded-3xl custom-shadow border border-warm-200/60 p-8 flex flex-col justify-between transition hover:-translate-y-1">
+                    <div>
+                        <div class="inline-block bg-warm-100 text-warm-800 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                            максимум
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite-900 mb-2">сопровождение</h3>
+                        <p class="text-warm-700 text-sm mb-6">для тех, кто хочет гарантированно выйти на целевую рентабельность при постоянной поддержке эксперта.</p>
+                        
+                        <div class="text-3xl font-extrabold text-graphite-900 mb-6">
+                            от 90 000 ₽ / мес
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-warm-800 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>всё из расширенного тарифа</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>ежемесячный план-факт анализ</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>контроль и оценка бюджетов на выставки</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check text-warm-600"></i>
+                                <span>работа с долгами и графиком выплат</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full bg-warm-100 text-warm-800 font-semibold py-3.5 rounded-xl text-center text-sm">
+                        максимальный контроль
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-20 bg-warm-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl custom-shadow border border-warm-200/60 p-8 sm:p-12 mb-16">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs uppercase tracking-widest text-warm-600 font-semibold mb-2 block">прогнозирование результатов</span>
+                    <h2 class="text-3xl font-bold text-graphite-900 mb-4">интерактивный расчет эффекта</h2>
+                    <p class="text-warm-700">узнайте ориентировочный рост маржинальности и устранение потерь после наведения порядка в учете.</p>
+                </div>
+
+                <!-- Calculator Controls -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 bg-warm-50 p-6 sm:p-8 rounded-2xl border border-warm-200/40">
+                    <div>
+                        <label class="block text-sm font-semibold text-graphite-900 mb-2">
+                            ежемесячный объем производства (шт. пледов/одеял): <span id="volumeVal" class="text-warm-800">150</span>
+                        </label>
+                        <input type="range" id="volumeRange" min="30" max="1000" step="10" value="150" class="w-full accent-warm-800 cursor-pointer" oninput="calculateEffect()">
+                        <div class="flex justify-between text-xs text-warm-600 mt-1">
+                            <span>30 шт.</span>
+                            <span>1000 шт.</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-graphite-900 mb-2">
+                            средняя стоимость изделия: <span id="priceVal" class="text-warm-800">18 000</span> ₽
+                        </label>
+                        <input type="range" id="priceRange" min="8000" max="60000" step="1000" value="18000" class="w-full accent-warm-800 cursor-pointer" oninput="calculateEffect()">
+                        <div class="flex justify-between text-xs text-warm-600 mt-1">
+                            <span>8 000 ₽</span>
+                            <span>60 000 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2 pt-6 border-t border-warm-200/60 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                        <div class="bg-white p-4 rounded-xl border border-warm-200/40">
+                            <span class="block text-xs text-warm-600 uppercase tracking-wider mb-1">выручка в месяц</span>
+                            <span id="resRevenue" class="text-xl font-bold text-graphite-900">2 700 000 ₽</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-warm-200/40">
+                            <span class="block text-xs text-warm-600 uppercase tracking-wider mb-1">скрытые потери (сейчас)</span>
+                            <span id="resLosses" class="text-xl font-bold text-red-600">~405 000 ₽</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-warm-200/40">
+                            <span class="block text-xs text-warm-600 uppercase tracking-wider mb-1">прибыль после учета</span>
+                            <span id="resProfit" class="text-xl font-bold text-green-700">~675 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct Contact Box -->
+            <div class="bg-warm-100/80 rounded-3xl border border-warm-200 p-8 sm:p-12 text-center max-w-2xl mx-auto custom-shadow">
+                <div class="w-16 h-16 bg-warm-800 text-warm-50 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-graphite-900 mb-3">прямые контактные данные</h3>
+                <p class="text-warm-700 text-sm mb-8 leading-relaxed">
+                    первичная консультация уже проведена. выберите подходящий тариф или свяжитесь с нами напрямую для согласования деталей старта работ.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="tel:+79990000000" class="w-full sm:w-auto bg-graphite-900 hover:bg-warm-800 text-white px-6 py-3.5 rounded-xl font-medium text-sm transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+7 (999) 000-00-00</span>
+                    </a>
+                    <a href="https://t.me/" target="_blank" class="w-full sm:w-auto bg-white hover:bg-warm-100 text-warm-800 border border-warm-300 px-6 py-3.5 rounded-xl font-medium text-sm transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>написать в telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-graphite-900 text-warm-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-warm-800 text-warm-100 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-rug"></i>
+                </div>
+                <span class="font-semibold text-lg text-white">WoolFinance</span>
+            </div>
+            <div class="text-sm text-warm-400 text-center md:text-left">
+                экспертный финансовый учет для премиального текстильного производства.
+            </div>
+            <div class="text-xs text-warm-500">
+                &copy; 2026 все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Calculator logic
+        function calculateEffect() {
+            const volume = parseInt(document.getElementById('volumeRange').value);
+            const price = parseInt(document.getElementById('priceRange').value);
+
+            document.getElementById('volumeVal').innerText = volume;
+            document.getElementById('priceVal').innerText = price.toLocaleString('ru-RU');
+
+            const revenue = volume * price;
+            const estimatedLosses = Math.round(revenue * 0.15); // ~15% hidden losses
+            const estimatedProfit = Math.round(revenue * 0.25); // optimized margin
+
+            document.getElementById('resRevenue').innerText = revenue.toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('resLosses').innerText = '~' + estimatedLosses.toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('resProfit').innerText = '~' + estimatedProfit.toLocaleString('ru-RU') + ' ₽';
+        }
+
+        // Initial run
+        window.onload = function() {
+            calculateEffect();
+        }
+    </script>
+</body>
+</html>
